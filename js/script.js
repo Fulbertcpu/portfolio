@@ -1,10 +1,3 @@
-let typed = new Typed(".typing", {
-    strings:["","Junior Web Developer","Software Engineering Student"],
-    typeSpeed:100,
-    backSpeed:60,
-    loop:true
-})
-
 const nav = document.querySelector(".nav"),
 navListe = nav.querySelectorAll("li"),
 totalNavList = navListe.length,
