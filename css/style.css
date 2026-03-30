@@ -806,6 +806,10 @@ h3.my-profession{
         display: block;
         margin-left: 0;
     }
+    body{
+         padding-top: 10px;
+         padding-bottom: 10px;
+    }
 }
 
 @media (max-width:991px){
@@ -813,7 +817,7 @@ h3.my-profession{
     .portfolio .portfolio-item,
     .service .service-item{
         flex: 0 0 50%;
-        max-width: 50ù;
+        max-width: 50%;
     }
 
     .home .home-info{
@@ -823,6 +827,11 @@ h3.my-profession{
 
     .home .home-image{
         display: none;
+    }
+
+     body{
+         padding-top: 10px;
+         padding-bottom: 10px;
     }
 
 }
@@ -839,6 +848,10 @@ h3.my-profession{
     {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+     body{
+         padding-top: 10px;
+         padding-bottom: 10px;
     }
 
 }
