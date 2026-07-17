@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fulbert Ouattara — Développeur Logiciel</title>
+  <meta name="description" content="Portfolio de Fulbert Ouattara, étudiant en L3 Génie Logiciel à ESETEC Yamoussoukro. Développement web, backend, applications.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+  <span></span><span></span><span></span>
+</button>
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<div class="layout">
+
+  <!-- ==============================
+       SIDEBAR
+  ============================== -->
+  <aside class="sidebar" id="sidebar">
+    <a href="#home" class="sidebar-logo nav-link">FO<span>.</span></a>
+    <p class="sidebar-tagline">Développeur Logiciel<br>Yamoussoukro, Côte d'Ivoire</p>
+
+    <div class="avail">Disponible — Stage</div>
+
+    <ul class="nav" id="navList">
+      <li><a href="#home"      class="nav-link active"><span class="nav-icon">⌂</span>Accueil</a></li>
+      <li><a href="#about"     class="nav-link"><span class="nav-icon">◉</span>À propos</a></li>
+      <li><a href="#services"  class="nav-link"><span class="nav-icon">◈</span>Services</a></li>
+      <li><a href="#portfolio" class="nav-link"><span class="nav-icon">▣</span>Projets</a></li>
+      <li><a href="#contact"   class="nav-link"><span class="nav-icon">✉</span>Contact</a></li>
+    </ul>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-socials">
+        <a href="https://github.com"   target="_blank" rel="noopener" title="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/fulbert-ouattara-97a586202?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" title="LinkedIn">in</a>
+        <a href="ouattarafulbert5@gmail.com" title="Email">@</a>
+      </div>
+      <p class="sidebar-copy">© 2026 Fulbert Ouattara</p>
+    </div>
+  </aside>
+
+  <!-- ==============================
+       CONTENU PRINCIPAL
+  ============================== -->
+  <main class="main">
+
+    <!-- ========== ACCUEIL ========== -->
+    <section id="home">
+      <div class="home-content">
+
+        <div class="home-eyebrow">Développeur · Étudiant · Ivoirien</div>
+
+        <h1 class="home-name">
+          Fulbert<br><span class="hi">Ouattara</span>
+        </h1>
+
+        <p class="home-role">
+          <span id="typing-text">Génie Logiciel L3</span><span class="cursor"></span>
+          <span class="dot"></span>
+          ESETEC Yamoussoukro
+        </p>
+
+        <p class="home-desc">
+          Passionné par la technologie et la création de solutions utiles, je conçois des applications web robustes, des architectures backend solides et des interfaces pensées pour l'utilisateur final. Je crois en l'impact concret du numérique pour l'Afrique.
+        </p>
+
+        <div class="home-cta">
+          <a href="assets/cv/Ouattara_Fulbert_cv.pdf" target="_blank" class="btn-amber">
+            📄 Voir mon CV
+          </a>
+          <a href="#contact" class="btn-ghost nav-link">
+            Me contacter →
+          </a>
+        </div>
+
+        <div class="home-stats fade-up">
+          <div class="stat">
+            <div class="stat-n">3+</div>
+            <div class="stat-l">Années de formation</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">6</div>
+            <div class="stat-l">Technologies</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">3</div>
+            <div class="stat-l">Certifications</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">🇨🇮</div>
+            <div class="stat-l">Côte d'Ivoire</div>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="home-photo fade-up" id="homePhoto">
+        <!-- Option A : image réelle -->
+        <img
+          src="image/fulbert.png"
+          alt="Fulbert Ouattara — Développeur Logiciel"
+          id="heroImg"
+          onerror="this.style.display='none';document.getElementById('photoPH').style.display='flex';"
+        >
+        <!-- Option B : placeholder si image absente -->
+        <div class="photo-placeholder" id="photoPH" style="display:none">
+          <div class="ph-icon">🖼️</div>
+          <p>Ma Photo<br><code style="font-size:0.7rem;color:var(--amber)"></code></p>
+        </div>
+        <div class="photo-badge">Fulbert Ouattara</div>
+      </div>
+    </section>
+
+    <!-- ========== À PROPOS ========== -->
+    <section id="about">
+      <div class="eyebrow fade-up">À propos de moi</div>
+      <div class="sec-divider fade-up"></div>
+      <h2 class="sec-title fade-up">Qui suis-je ?</h2>
+
+      <div class="about-grid">
+
+        <!-- Gauche : texte + infos -->
+        <div>
+          <p class="about-p fade-up">Je suis Fulbert Ouattara, étudiant en troisième année de Génie Logiciel à ESETEC Yamoussoukro. Ma conviction est simple : la technologie est l'un des leviers les plus puissants pour transformer l'Afrique, à condition d'être appliquée avec rigueur et sens de l'impact concret.</p>
+          <p class="about-p fade-up">Je m'investis dans des projets de la conception à la mise en production, en cherchant toujours à relier ce que je construis à un besoin réel. Je suis particulièrement intéressé par les architectures backend, la fintech et les solutions adaptées aux réalités africaines.</p>
+
+          <div class="info-grid fade-up">
+            <div class="info-cell"><div class="info-k">Date de naissance</div><div class="info-v">09 Août 2006</div></div>
+            <div class="info-cell"><div class="info-k">Ville</div><div class="info-v">Yamoussoukro, CI</div></div>
+            <div class="info-cell"><div class="info-k">Email</div><div class="info-v">ouattarafulbert5@gmail.com</div></div>
+            <div class="info-cell"><div class="info-k">Téléphone</div><div class="info-v">+225 05 74 98 12 83</div></div>
+            <div class="info-cell"><div class="info-k">Formation</div><div class="info-v">L3 Génie Logiciel</div></div>
+            <div class="info-cell"><div class="info-k">Langues</div><div class="info-v">Français · Anglais</div></div>
+            <div class="info-cell" style="grid-column:1/-1"><div class="info-k">Statut</div><div class="info-v green">✓ Disponible pour un stage — immédiatement</div></div>
+          </div>
+
+          <div class="tl-head fade-up">Parcours académique</div>
+          <div class="timeline fade-up">
+            <div class="tl-item">
+              <div class="tl-yr">2023 — 2026</div>
+              <div class="tl-ti">Licence 3 – Génie Logiciel</div>
+              <div class="tl-su">ESETEC, Yamoussoukro</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-yr">2016 — 2023</div>
+              <div class="tl-ti">Baccalauréat – Série D</div>
+              <div class="tl-su">Lycée Moderne Lucien Yebarth, San Pedro</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Droite : compétences + certifications -->
+        <div>
+          <div class="tl-head fade-up">Compétences techniques</div>
+          <div class="fade-up">
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-nm">HTML · CSS</span><span class="skill-pc">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-nm">React.js</span><span class="skill-pc">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-nm">Python · Django</span><span class="skill-pc">70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-nm">PostgreSQL</span><span class="skill-pc">65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-nm">JavaScript</span><span class="skill-pc">65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span class="skill-nm">Node.js · Express</span><span class="skill-pc">60%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="60"></div></div>
+            </div>
+          </div>
+
+          <div class="tl-head fade-up" style="margin-top:32px">Certifications</div>
+          <div class="timeline fade-up">
+            <div class="tl-item">
+              <div class="tl-yr">2025 · Google</div>
+              <div class="tl-ti">Project Management</div>
+              <div class="tl-su">Gestion de projets numériques — Coursera</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-yr">2025 · World Bank</div>
+              <div class="tl-ti">GovTech Fundamentals</div>
+              <div class="tl-su">Technologies gouvernementales et numérique public</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-yr">2025 · NASA</div>
+              <div class="tl-ti">Open Science Essentials</div>
+              <div class="tl-su">Science ouverte et partage des données</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services">
+      <div class="eyebrow fade-up">Ce que je fais</div>
+      <div class="sec-divider fade-up"></div>
+      <h2 class="sec-title fade-up">Services</h2>
+      <p class="sec-sub fade-up">Des solutions construites avec méthode, orientées performance et maintenabilité.</p>
+
+      <div class="services-grid">
+        <div class="svc-card fade-up">
+          <div class="svc-icon">🌐</div>
+          <div class="svc-name">Développement Web</div>
+          <div class="svc-desc">Applications web complètes, responsives et accessibles — de la maquette à la production, avec attention portée à la performance et à l'expérience utilisateur.</div>
+        </div>
+        <div class="svc-card fade-up">
+          <div class="svc-icon">⚙️</div>
+          <div class="svc-name">Backend & API REST</div>
+          <div class="svc-desc">Architecture et développement serveur avec Django et Node.js. APIs robustes, sécurisées, versionnées et documentées selon les standards du secteur.</div>
+        </div>
+        <div class="svc-card fade-up">
+          <div class="svc-icon">🎨</div>
+          <div class="svc-name">Frontend React</div>
+          <div class="svc-desc">Interfaces modernes et interactives avec React.js. Composants réutilisables, gestion d'état propre, transitions fluides et code organisé.</div>
+        </div>
+        <div class="svc-card fade-up">
+          <div class="svc-icon">🗄️</div>
+          <div class="svc-name">Base de données</div>
+          <div class="svc-desc">Conception, modélisation et optimisation de bases de données relationnelles (PostgreSQL). Intégrité des données, performance des requêtes et sécurité.</div>
+        </div>
+        <div class="svc-card fade-up">
+          <div class="svc-icon">📐</div>
+          <div class="svc-name">Architecture logicielle</div>
+          <div class="svc-desc">Structuration des systèmes pour une évolutivité et une maintenabilité à long terme. Patterns reconnus, séparation des responsabilités, documentation claire.</div>
+        </div>
+        <div class="svc-card fade-up">
+          <div class="svc-icon">💡</div>
+          <div class="svc-name">Conseil technique</div>
+          <div class="svc-desc">Accompagnement dans le choix des technologies, la planification des projets et la résolution de problèmes techniques complexes.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJETS ========== -->
+    <section id="portfolio">
+      <div class="eyebrow fade-up">Réalisations</div>
+      <div class="sec-divider fade-up"></div>
+      <h2 class="sec-title fade-up">Projets</h2>
+      <p class="sec-sub fade-up">Chaque projet est l'occasion d'apprendre, de construire quelque chose qui fonctionne vraiment et de créer de la valeur concrète.</p>
+
+      <div class="portfolio-grid">
+
+        <div class="proj-card fade-up">
+          <div class="proj-thumb proj-thumb-1">
+            🚀
+            <span class="proj-badge b-progress">En cours</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-name">Yasolution</div>
+            <div class="proj-desc">Plateforme web à architecture modulaire — gestion de services, tableau de bord analytique, système de facturation intégré et espace client sécurisé.</div>
+            <div class="proj-stack">
+              <span class="stk">React.js</span><span class="stk">Node.js</span>
+              <span class="stk">Express</span><span class="stk">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card fade-up">
+          <div class="proj-thumb proj-thumb-2">
+            🛒
+            <span class="proj-badge b-done">Terminé</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-name">Plateforme Longrich</div>
+            <div class="proj-desc">Système de vente et de marketing digital adapté au marché africain — catalogue produits, suivi des distributeurs et gestion des commandes en temps réel.</div>
+            <div class="proj-stack">
+              <span class="stk">React</span><span class="stk">Node.js</span>
+              <span class="stk">Express</span><span class="stk">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card fade-up">
+          <div class="proj-thumb proj-thumb-3">
+            🤖
+            <span class="proj-badge b-done">Terminé</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-name">Agent IA Local</div>
+            <div class="proj-desc">Assistant de développement 100% hors ligne avec Ollama et Claude Code. Conçu pour les contraintes de connectivité en Afrique de l'Ouest — zéro dépendance cloud.</div>
+            <div class="proj-stack">
+              <span class="stk">Ollama</span><span class="stk">Claude Code</span>
+              <span class="stk">Python</span><span class="stk">LiteLLM</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <div class="eyebrow fade-up">Parlons-nous</div>
+      <div class="sec-divider fade-up"></div>
+      <h2 class="sec-title fade-up">Contact</h2>
+
+      <div class="contact-grid">
+
+        <!-- Informations -->
+        <div class="fade-up">
+          <p class="contact-lead">Je suis disponible pour un stage, une collaboration ou tout échange autour d'un projet. Je réponds généralement dans les 24 heures.</p>
+
+          <div class="cinfo-list">
+            <a href="tel:+2250574981283" class="cinfo-item">
+              <div class="cinfo-ico">📞</div>
+              <div><div class="cinfo-k">Téléphone</div><div class="cinfo-v">+225 05 74 98 12 83</div></div>
+            </a>
+            <a href="ouattarafulbert5@gmail.com" class="cinfo-item">
+              <div class="cinfo-ico">✉️</div>
+              <div><div class="cinfo-k">Email</div><div class="cinfo-v">ouattarafulbert5@gmail.com</div></div>
+            </a>
+            <div class="cinfo-item" style="cursor:default">
+              <div class="cinfo-ico">📍</div>
+              <div><div class="cinfo-k">Localisation</div><div class="cinfo-v">Yamoussoukro, Côte d'Ivoire 🇨🇮</div></div>
+            </div>
+            <div class="cinfo-item" style="cursor:default">
+              <div class="cinfo-ico">⏱️</div>
+              <div><div class="cinfo-k">Disponibilité</div><div class="cinfo-v" style="color:var(--green)">Immédiate · Temps plein</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire -->
+        <form id="contactForm" class="fade-up">
+          <div class="form-duo">
+            <div class="fg">
+              <label for="f-name">Nom complet</label>
+              <input type="text" id="f-name" class="fc" placeholder="Votre nom" required>
+            </div>
+            <div class="fg">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" class="fc" placeholder="vous@exemple.com" required>
+            </div>
+          </div>
+          <div class="form-duo">
+            <div class="fg span2">
+              <label for="f-subject">Sujet</label>
+              <input type="text" id="f-subject" class="fc" placeholder="Ex : Proposition de stage, projet, collaboration…" required>
+            </div>
+          </div>
+          <div class="form-duo">
+            <div class="fg span2">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" class="fc" placeholder="Décrivez votre projet, votre besoin ou votre demande…" required></textarea>
+            </div>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn-amber">
+              📨 Envoyer le message
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="footer-left">
+    Conçu et développé par <strong>Fulbert Ouattara</strong> · ESETEC Yamoussoukro · 2026
+  </div>
+  <div class="footer-right">
+    <a href="#home" class="nav-link">Accueil</a>
+    <a href="#about" class="nav-link">À propos</a>
+    <a href="#portfolio" class="nav-link">Projets</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+ <script src="js/script.js"></script>
+</body>
+</html>
